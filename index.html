@@ -3,68 +3,212 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Shri Ram | Portfolio</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <title>Shriram M | Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #0f172a;
+      color: #f1f5f9;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .resume-btn {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .resume-btn:hover {
+      transform: translateY(-4px) scale(1.05);
+      box-shadow: 0 12px 20px rgba(0, 0, 0, 0.5);
+    }
+    a {
+      color: #38bdf8;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    section {
+      background-color: #1e293b;
+      border-radius: 0.5rem;
+      padding: 2rem 1.5rem;
+      margin-bottom: 2rem;
+    }
+    .display-4 {
+      font-size: 2.2rem;
+      font-weight: 500;
+    }
+    .lead {
+      font-size: 1rem;
+    }
+    .footer-email {
+      color: #f1f5f9 !important;
+    }
+    .badge.bg-primary {
+      background-color: #6b7280 !important;
+      color: #f8fafc;
+      font-size: 0.9rem;
+      padding: 0.5em 1em;
+      border-radius: 9999px;
+      display: flex;
+      align-items: center;
+      gap: 0.5em;
+    }
+    .skill-icon {
+      width: 20px;
+      height: 20px;
+    }
+    .project-gallery {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+    .project-item {
+      display: flex;
+      gap: 1.5rem;
+      background-color: #1f2937;
+      border-radius: 0.5rem;
+      overflow: hidden;
+      padding: 1rem;
+      align-items: center;
+      flex-wrap: wrap;
+      transition: transform 0.3s ease;
+    }
+    .project-item:hover {
+      transform: scale(1.02);
+    }
+    .project-item img {
+      width: 280px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 0.5rem;
+    }
+    .project-info {
+      flex: 1;
+    }
+    .tech-stack {
+      margin-top: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .tech-stack img {
+      width: 28px;
+      height: 28px;
+      background-color: #f1f5f9;
+      border-radius: 4px;
+      padding: 2px;
+    }
+  </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
-
-  <!-- Hero Section -->
-  <section class="text-center py-20 bg-blue-100 shadow-md">
-    <h1 class="text-4xl font-bold">Hi, I'm <span class="text-blue-600">Shriram M</span></h1>
-    <p class="text-lg mt-2">Aspiring Software Engineer | Tech Enthusiast</p>
+<body>
+  <!-- Hero -->
+  <section class="container text-center mt-5">
+    <h1 class="display-4">Hi, I'm <span class="text-info">Shriram M</span></h1>
+    <p class="lead">Aspiring Software Engineer | Tech Enthusiast</p>
+    <a href="shri_portfolio.pdf" download class="btn btn-outline-light mt-3 resume-btn">
+      <i class="bi bi-file-earmark-person"></i> Download Resume
+    </a>
   </section>
 
   <!-- About Me -->
-  <section class="max-w-4xl mx-auto py-12 px-4">
-    <h2 class="text-2xl font-bold mb-4">About Me</h2>
-    <p class="text-gray-700 text-lg leading-relaxed">
+  <section class="container">
+    <h2 class="h4 text-info mb-3">👋 About Me</h2>
+    <p>
       I'm a Computer Science graduate passionate about software engineering, web development, and building impactful tech solutions. I enjoy learning new technologies and solving real-world problems through code.
     </p>
   </section>
 
+  <!-- Education -->
+  <section class="container">
+    <h2 class="h4 text-info mb-3">🎓 Education</h2>
+    <p><strong>B.E. Computer Science Engineering</strong><br>
+      <span class="text-light">SRM Valliammai Engineering College, 2024</span><br>
+      CGPA: 8.9 / 10
+    </p>
+  </section>
+
+  <!-- Certifications -->
+  <section class="container">
+    <h2 class="h4 text-info mb-3">📜 Certifications</h2>
+    <ul>
+      <li>Google Cybersecurity Certificate (Coursera)</li>
+      <li>Python for Everybody – University of Michigan</li>
+      <li>Intro to Cloud Computing – IBM SkillsBuild</li>
+      <li>Responsive Web Design – freeCodeCamp</li>
+    </ul>
+  </section>
+
   <!-- Skills -->
-  <section class="bg-white py-12 px-4 shadow-inner">
-    <div class="max-w-4xl mx-auto">
-      <h2 class="text-2xl font-bold mb-4">Skills</h2>
-      <div class="flex flex-wrap gap-4 text-blue-700">
-        <span class="bg-blue-100 px-4 py-2 rounded-lg">Python</span>
-        <span class="bg-blue-100 px-4 py-2 rounded-lg">HTML</span>
-        <span class="bg-blue-100 px-4 py-2 rounded-lg">CSS</span>
-        <span class="bg-blue-100 px-4 py-2 rounded-lg">JavaScript</span>
-        <span class="bg-blue-100 px-4 py-2 rounded-lg">SQL</span>
-        <span class="bg-blue-100 px-4 py-2 rounded-lg">Git</span>
-        <span class="bg-blue-100 px-4 py-2 rounded-lg">VS Code</span>
-      </div>
+  <section class="container">
+    <h2 class="h4 text-info mb-3">🧠 Skills</h2>
+    <div class="d-flex flex-wrap gap-3">
+      <span class="badge bg-primary"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="skill-icon" /> Python</span>
+      <span class="badge bg-primary"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="skill-icon" /> HTML</span>
+      <span class="badge bg-primary"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="skill-icon" /> CSS</span>
+      <span class="badge bg-primary"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="skill-icon" /> JavaScript</span>
+      <span class="badge bg-primary"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" class="skill-icon" /> SQL</span>
+      <span class="badge bg-primary"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" class="skill-icon" /> Git</span>
+      <span class="badge bg-primary"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" class="skill-icon" /> VS Code</span>
     </div>
   </section>
 
-  <!-- Projects -->
-  <section class="max-w-4xl mx-auto py-12 px-4">
-    <h2 class="text-2xl font-bold mb-6">Projects</h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-      <!-- Project Card -->
-      <a href="projects/smart-todo/index.html" class="block p-4 border border-gray-200 rounded-lg hover:shadow-lg transition">
-        <h3 class="text-xl font-semibold text-blue-600">📝 Smart To-Do List</h3>
-        <p class="text-gray-600">Modern UI task manager with animations, local storage, and filtering.</p>
+  <!-- Tools -->
+  <section class="container">
+    <h2 class="h4 text-info mb-3">🛠️ Tools & Platforms</h2>
+    <div class="d-flex flex-wrap gap-3">
+      <span class="badge bg-primary"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" class="skill-icon" /> GitHub</span>
+      <span class="badge bg-primary"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg" class="skill-icon" /> Windows</span>
+      <span class="badge bg-primary"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/chrome/chrome-original.svg" class="skill-icon" /> Chrome DevTools</span>
+    </div>
+  </section>
+
+  <!-- Achievements -->
+  <section class="container">
+    <h2 class="h4 text-info mb-3">🏅 Achievements</h2>
+    <ul>
+      <li>Presented final year project on object detection at college tech expo</li>
+      <li>Volunteered at campus placement events and tech workshops</li>
+      <li>Maintained consistent attendance and participation throughout college</li>
+    </ul>
+  </section>
+
+  <!-- Project Gallery -->
+  <section class="container">
+    <h2 class="h4 text-info mb-3">🖼️ Project Gallery</h2>
+    <div class="project-gallery">
+      <a class="project-item" href="https://github.com/Shriram320/object-detection-tracking" target="_blank">
+        <img src="https://miro.medium.com/v2/resize:fit:1200/1*HeHZnQuQZKmnJxVscbOSIg.jpeg" alt="YOLOv8 Object Detection">
+        <div class="project-info">
+          <h5 class="text-info">Object Detection & Tracking</h5>
+          <p class="small">Real-time object tracking using YOLOv8 and DeepSORT with camera integration and accurate bounding boxes.</p>
+          <div class="tech-stack">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg" alt="OpenCV">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+          </div>
+        </div>
       </a>
-      <!-- Add more project cards here -->
+      <a class="project-item" href="https://github.com/Shriram320/smart-notes-app" target="_blank">
+        <img src="https://able.ac/blog/how-to-take-smart-notes/" alt="Notes App">
+        <div class="project-info">
+          <h5 class="text-info">Smart Notes App</h5>
+          <p class="small">React-based note taking application with autosave, markdown and tag filtering features.</p>
+          <div class="tech-stack">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+          </div>
+        </div>
+      </a>
     </div>
   </section>
 
-  <!-- Resume -->
-  <section class="bg-gray-100 py-12 px-4 text-center">
-    <h2 class="text-2xl font-bold mb-4">Download My Resume</h2>
-    <a href="resume.pdf" download class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition">
-      📄 Download Resume
-    </a>
-  </section>
-
-  <!-- Contact -->
-  <footer class="text-center py-8 text-sm text-gray-500">
-    📧 shrirammaraignanam@gmail.com |
-    <a href="https://github.com/YOUR-GITHUB-USERNAME" class="text-blue-600">GitHub</a>
-    <!-- Add LinkedIn if available -->
+  <!-- Footer -->
+  <footer class="container text-center mt-4 pb-4">
+    <p class="footer-email">📧 shrirammaraignanam@gmail.com</p>
+    <p>
+      <a href="https://github.com/Shriram320">GitHub</a> |
+      <a href="https://linkedin.com/in/shri-ram-45263b334">LinkedIn</a>
+    </p>
   </footer>
-
 </body>
 </html>

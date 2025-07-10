@@ -1,0 +1,16 @@
+{
+  "name": "smart-notes-app",
+  "version": "1.0.0",
+  "description": "Smart Notes App with Markdown and Tags",
+  "main": "index.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  },
+  "dependencies": {
+    "marked": "^5.0.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "^0.0.0"
+  }
+}

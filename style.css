@@ -1,0 +1,121 @@
+/* --- BASE & RESET --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f7fb;
+  color: #333;
+  line-height: 1.6;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* --- HERO SECTION --- */
+.hero {
+  background: linear-gradient(135deg, #6B73FF 0%, #000DFF 100%);
+  color: white;
+  text-align: center;
+  padding: 4rem 1rem;
+}
+.hero h1 {
+  font-size: 2.75rem;
+  margin-bottom: 0.5rem;
+}
+.hero p {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+/* --- SECTIONS --- */
+section {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+section h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+section h2::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: #000DFF;
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+}
+
+/* --- SKILLS BADGES --- */
+.skills-list {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.skills-list span {
+  background: #e0e7ff;
+  color: #1e3a8a;
+  padding: 0.5rem 0.75rem;
+  border-radius: 9999px;
+  font-weight: 500;
+}
+
+/* --- PROJECT CARDS --- */
+.projects-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+.project-card {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+.project-card h3 {
+  margin-bottom: 0.75rem;
+  color: #000DFF;
+}
+.project-card p {
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+/* --- RESUME BUTTON --- */
+.resume-btn {
+  display: inline-block;
+  background: #000DFF;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+.resume-btn:hover {
+  background: #0000e6;
+}
+
+/* --- FOOTER --- */
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+footer a {
+  color: #000DFF;
+  font-weight: 500;
+}
+s
